@@ -1,5 +1,5 @@
-#ifndef Point2D
-#define Point2D
+#ifndef POINT2D_H
+#define POINT2D_H
 
 #include <iostream>
 
@@ -26,7 +26,9 @@ public:
 	}
 
 	// Функция доступа
-	void setPoint(int x, int y) : x(x), y(y) {
+	void setPoint(int x, int y) {
+		m_x = x;
+		m_y = y;
 	}
 };
 
