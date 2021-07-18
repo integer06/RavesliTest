@@ -1,2 +1,3 @@
 ﻿  Source.cpp
-  148.vcxproj -> D:\Программирование\RavesliTest\148\148\Debug\148.exe
+K:\Проекты\RavesliTest\148\148\148\Source.cpp(29,27): warning C4018: <: несоответствие типов со знаком и без знака
+  148.vcxproj -> K:\Проекты\RavesliTest\148\148\Debug\148.exe

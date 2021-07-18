@@ -16,16 +16,19 @@ public:
 
 class Department {
 private:
-    std::vector<Worker> m_worker;
+    std::vector<Worker*> m_worker;
 
 public:
 
     void add(Worker *worker) {
-        m_worker.push_back(*worker);
+        m_worker.push_back(worker);
     }
 
-    friend std::ostream& operator << (std::ostream& out, const std::vector<Worker> &worker) {
-        out << "Department include:" << worker-> << У, Ф << point.m_y << У, Ф << point.m_z << У)Ф;
+    friend std::ostream& operator << (std::ostream& out, const Department &department) {
+        out << "Department include:";
+        for (int i = 0; i < department.m_worker.size(); ++i)
+            out << department.m_worker[i]->getName() << ' ';
+        out << '\n';
         return out;
     }
 
@@ -46,7 +49,7 @@ int main()
         department.add(w2);
         department.add(w3);
 
-       // std::cout << department;
+        std::cout << department;
 
     } // department выходит из области видимости и уничтожаетс€ здесь
 
